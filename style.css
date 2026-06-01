@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f8f9fa;
+  padding-top: 90px;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8%;
+  background: #d50000;
+  color: white;
+  z-index: 1000;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-section img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.logo-section h2 {
+  color: white;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+.menu-btn {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url("images/building.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #d50000;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: white;
+}
+
+/* ABOUT */
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 8%;
+  gap: 40px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  color: #d50000;
+  margin-bottom: 15px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 15px;
+  border-color: #d50000;
+}
+
+/* WHY US */
+.why-us {
+  padding: 80px 8%;
+  background: #fff;
+  text-align: center;
+}
+
+.why-us h2 {
+  color: #d50000;
+  margin-bottom: 40px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.feature-card {
+  background: #f1f1f1;
+  padding: 25px;
+  border-radius: 12px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  background:#ffd700;
+}
+
+.feature-card i {
+  font-size: 40px;
+  color: #d50000;
+  margin-bottom: 15px;
+}
+
+/* ADMISSION */
+.admission {
+     color: #d50000;
+  padding: 80px 8%;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.admission form {
+  max-width: 500px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.admission input, .admission textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.admission button {
+  background: #d50000;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* PRINCIPAL */
+ .principal h1 {
+  color: red;
+}
+.principal {
+  padding: 80px 8%;
+  text-align: center;
+}
+  
+
+.principal img {
+  width: 600px;
+  border-radius: 25%;
+  margin-top: 8px;
+}
+
+/* GALLERY */
+.gallery {
+    padding: 80px 8%;
+  background: #fff;
+  text-align: center;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin-top: 30px;
+  color: #d50000;
+  font-size: 36px;
+}
+
+
+.gallery-container img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* NEWS */
+.news {
+  padding: 80px 8%;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.news-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.news-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.news-card:hover {
+  transform: translateY(-10px);
+}
+
+/* CONTACT */
+.contact {
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact input, .contact textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.contact button {
+  background: #d50000;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  background:#d50000;
+  color: white;
+  text-align: center;
+  padding: 30px 8%;
+  margin-top: 50px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+  
+  nav {
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    background: #d50000;
+    transition: 0.3s;
+  }
+  
+  nav.active {
+    left: 0;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .hero h1 {
+    font-size: 35px;
+  }
+  
+  .about {
+    flex-direction: column;
+    padding: 50px 5%;
+  }
+}
